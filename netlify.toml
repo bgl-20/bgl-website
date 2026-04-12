@@ -4,3 +4,9 @@
 
 [build.environment]
   NPM_FLAGS = "--legacy-peer-deps"
+
+[[redirects]]
+  from = "https://shop.backyardgolf.io/*"
+  to = "/shop/:splat"
+  status = 200
+  force = true

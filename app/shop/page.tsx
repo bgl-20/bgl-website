@@ -59,16 +59,16 @@ export default function ShopPage() {
 
         <div className="flex items-center gap-6 text-sm font-semibold tracking-widest">
           <a
-            href="https://league.backyardgolf.io/"
+            href="https://clubhouse.backyardgolf.io/"
             target="_blank"
             rel="noopener noreferrer"
             className="transition-opacity hover:opacity-70"
             style={{ color: "rgba(255,255,255,0.75)" }}
           >
-            LOG IN
+            BGL CLUBHOUSE
           </a>
           <a
-            href="https://shop.backyardgolf.io"
+            href="https://backyardgolf.online"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-2 px-4 py-2 rounded-full text-xs font-bold tracking-widest transition-all hover:opacity-90"
@@ -116,11 +116,11 @@ export default function ShopPage() {
             </h1>
 
             <p className="text-base md:text-lg leading-relaxed mb-8 max-w-lg" style={{ color: "rgba(255,255,255,0.7)" }}>
-              Official Backyard Golf League apparel and accessories. Designed for the course. Built to last the season.
+              Official Backyard Golf League apparel and accessories. 
             </p>
 
             <a
-              href="https://shop.backyardgolf.io"
+              href="https://backyardgolf.online"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 font-bold text-sm tracking-widest transition-opacity hover:opacity-80"
@@ -164,7 +164,7 @@ export default function ShopPage() {
             </h2>
           </div>
           <a
-            href="https://shop.backyardgolf.io"
+            href="https://backyardgolf.online"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold tracking-wider transition-opacity hover:opacity-70"
@@ -264,7 +264,7 @@ export default function ShopPage() {
 
           {/* CTA card */}
           <a
-            href="https://shop.backyardgolf.io"
+            href="https://backyardgolf.online"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center justify-center rounded-2xl border-2 border-dashed p-8 text-center transition-all duration-300 hover:-translate-y-1"
@@ -289,7 +289,7 @@ export default function ShopPage() {
       {/* Banner strip */}
       <section
         className="py-14 px-6 md:px-10 text-center"
-        style={{ backgroundColor: "#2c3e6b" }}
+        style={{ background: "linear-gradient(180deg, #2c3e6b 0%, #1a2647 60%, #0f1929 100%)" }}
       >
         <p
           className="text-xs font-bold tracking-widest mb-3"
@@ -300,21 +300,11 @@ export default function ShopPage() {
         <h2 className="text-3xl md:text-4xl font-black tracking-tight text-white mb-4">
           Represent the League.
         </h2>
-        <p className="text-sm md:text-base mb-8 max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.65)" }}>
+        <p className="text-sm md:text-base max-w-xl mx-auto" style={{ color: "rgba(255,255,255,0.65)" }}>
           Every purchase supports the Backyard Golf League. Wear it on the course. Wear it everywhere.
         </p>
-        <a
-          href="https://shop.backyardgolf.io"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-sm tracking-widest transition-all hover:opacity-90"
-          style={{ backgroundColor: "#cc2936", color: "#fff" }}
-        >
-          SHOP ALL PRODUCTS
-          <ArrowRight className="w-4 h-4" />
-        </a>
       </section>
-
+ 
       {/* Footer */}
       <footer
         className="py-10 px-6 md:px-10 border-t"
@@ -322,14 +312,13 @@ export default function ShopPage() {
       >
         <div className="container mx-auto max-w-6xl flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="https://backyardgolf.io" className="relative w-[140px] h-[44px]">
-            <Image
+            <img
               src="/white_cursive_cropped_transparent.png"
               alt="Backyard Golf"
-              fill
-              className="object-contain object-left"
+              className="absolute inset-0 w-full h-full object-contain object-left"
             />
           </a>
-
+ 
           <div className="flex items-center gap-8 text-xs font-semibold tracking-widest" style={{ color: "rgba(255,255,255,0.45)" }}>
             <a
               href="https://backyardgolf.io"
@@ -338,7 +327,7 @@ export default function ShopPage() {
               HOME
             </a>
             <a
-              href="https://shop.backyardgolf.io"
+              href="https://backyardgolf.online"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
@@ -346,15 +335,15 @@ export default function ShopPage() {
               STORE
             </a>
             <a
-              href="https://league.backyardgolf.io/"
+              href="https://clubhouse.backyardgolf.io/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
             >
-              LOG IN
+              BGL CLUBHOUSE
             </a>
             <a
-              href="https://instagram.com"
+              href="https://instahttps://www.instagram.com/bgl_invitational/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
@@ -364,7 +353,7 @@ export default function ShopPage() {
             </a>
           </div>
         </div>
-
+ 
         <div className="container mx-auto max-w-6xl mt-6 pt-6 border-t" style={{ borderColor: "#1e2d50" }}>
           <p className="text-center text-xs" style={{ color: "rgba(255,255,255,0.25)" }}>
             &copy; {new Date().getFullYear()} Backyard Golf League. All rights reserved.
