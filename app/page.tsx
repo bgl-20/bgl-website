@@ -22,17 +22,20 @@ export default function Page() {
             />
           </div>
           <div className="flex gap-6 md:gap-8 text-sm font-medium">
-            <a href="https://shop.backyardgolf.io" target="_blank" rel="noopener noreferrer" className="text-hero-text/80 hover:text-hero-text transition-colors">
+            <a
+              href="https://shop.backyardgolf.io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-hero-text/80 hover:text-hero-text transition-colors"
+            >
               BGL PRO SHOP
             </a>
             <a
               href="https://clubhouse.backyardgolf.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-hero-text/80 hover:text-hero-text transition-colors"
+              className="text-hero-text/80 hover:text-hero-text transition-colors flex items-center gap-2"
             >
-              CLUBHOUSE
-            </a>
               <User className="w-4 h-4" />
               CLUBHOUSE
             </a>
