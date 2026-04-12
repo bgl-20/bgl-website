@@ -12,8 +12,8 @@ export const metadata: Metadata = {
   description: "Structured seasons. Rotating courses. A leaderboard with your name on it. This is recreational golf that actually feels like something.",
   generator: "v0.app",
   icons: {
-    icon: "/Favicon.png",
-    apple: "/Favicon.png",
+    icon: "/BackyardGolfIcon.png",
+    apple: "/BackyardGolfIcon.png",
   },
 }
 
