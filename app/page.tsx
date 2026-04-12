@@ -1,3 +1,10 @@
+// app/page.tsx
+// ──────────────────────────────────────────────────────────
+// Route: backyardgolf.io (homepage)
+// Purpose: Main landing page for Backyard Golf League
+// Sections: Hero → Mass Golf banner → Discovery → How It Works → Clubhouse → Footer
+// ──────────────────────────────────────────────────────────
+
 import { Button } from "@/components/ui/button"
 import { ArrowRight, Instagram, User, ShoppingBag, Trophy, Users, Calendar, BarChart3 } from "lucide-react"
 import Image from "next/image"

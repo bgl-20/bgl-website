@@ -45,7 +45,7 @@ function IOSSteps() {
       <Step
         number={1}
         title="Open in Safari"
-        description="The Clubhouse must be opened in Safari to install. If you're in Chrome or another browser, copy the link and paste it in Safari."
+        description="Tap the link above to copy it, then open Safari and paste it in the address bar. The Clubhouse must be opened in Safari to install."
         icon={
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="w-5 h-5">
             <circle cx="12" cy="12" r="10" />
@@ -141,6 +141,47 @@ function Step({
   )
 }
 
+// ── Copy Link Button (mobile) ──
+function CopyLinkButton({ url }: { url: string }) {
+  const [copied, setCopied] = useState(false)
+
+  const handleCopy = async () => {
+    try {
+      await navigator.clipboard.writeText(url)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    } catch {
+      // Fallback for older browsers
+      const input = document.createElement("input")
+      input.value = url
+      document.body.appendChild(input)
+      input.select()
+      document.execCommand("copy")
+      document.body.removeChild(input)
+      setCopied(true)
+      setTimeout(() => setCopied(false), 2000)
+    }
+  }
+
+  return (
+    <button
+      onClick={handleCopy}
+      className={`flex items-center gap-3 w-full max-w-sm rounded-xl px-4 py-3.5 text-left transition-all mb-10 ${
+        copied
+          ? "bg-green-500/15 border border-green-500/30"
+          : "bg-white/5 border border-white/10 active:bg-white/10"
+      }`}
+    >
+      <code className={`text-sm flex-1 truncate ${copied ? "text-green-400" : "text-white/70"}`}>
+        {copied ? "Copied!" : "clubhouse.backyardgolf.io"}
+      </code>
+      <span className={`text-xs font-bold flex-shrink-0 ${copied ? "text-green-400" : "text-[#cc2936]"}`}>
+        {copied ? "✓" : "COPY"}
+      </span>
+    </button>
+  )
+}
+
 // ── Main Page ──
 export default function GetClubhousePage() {
   const [platform, setPlatform] = useState<Platform>("desktop")
@@ -198,11 +239,14 @@ export default function GetClubhousePage() {
             {/* Open button — takes them to the app */}
             <a
               href={CLUBHOUSE_URL}
-              className="inline-flex items-center gap-2 bg-[#cc2936] text-white hover:bg-[#cc2936]/90 font-medium rounded-full px-8 py-3.5 text-sm transition-all mb-12"
+              className="inline-flex items-center gap-2 bg-[#cc2936] text-white hover:bg-[#cc2936]/90 font-medium rounded-full px-8 py-3.5 text-sm transition-all mb-4"
             >
               OPEN CLUBHOUSE
               <ArrowRight className="w-4 h-4" />
             </a>
+
+            {/* Copy link — for iOS users who need to paste into Safari */}
+            <CopyLinkButton url={CLUBHOUSE_URL} />
 
             {/* Divider */}
             <div className="border-t border-white/10 pt-10 mb-2">
