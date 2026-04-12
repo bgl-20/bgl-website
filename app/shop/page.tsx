@@ -164,7 +164,7 @@ export default function ShopPage() {
             </h2>
           </div>
           <a
-            href="https://backyardgolf.online"
+            href="https://shop.backyardgolf.io"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 text-sm font-semibold tracking-wider transition-opacity hover:opacity-70"
@@ -264,7 +264,7 @@ export default function ShopPage() {
 
           {/* CTA card */}
           <a
-            href="https://backyardgolf.online"
+            href="https://shop.backyardgolf.io"
             target="_blank"
             rel="noopener noreferrer"
             className="group flex flex-col items-center justify-center rounded-2xl border-2 border-dashed p-8 text-center transition-all duration-300 hover:-translate-y-1"
@@ -304,7 +304,7 @@ export default function ShopPage() {
           Every purchase supports the Backyard Golf League. Wear it on the course. Wear it everywhere.
         </p>
         <a
-          href="https://backyardgolf.online"
+          href="https://shop.backyardgolf.io"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full font-bold text-sm tracking-widest transition-all hover:opacity-90"
@@ -338,7 +338,7 @@ export default function ShopPage() {
               HOME
             </a>
             <a
-              href="https://backyardgolf.online"
+              href="https://shop.backyardgolf.io"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition-colors"
