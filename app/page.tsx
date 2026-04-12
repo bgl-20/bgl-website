@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Instagram, User } from "lucide-react"
+import { ArrowRight, Instagram, User, ShoppingBag } from "lucide-react"
 import Image from "next/image"
 
 export default function Page() {
@@ -26,8 +26,9 @@ export default function Page() {
               href="https://shop.backyardgolf.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-hero-text/80 hover:text-hero-text transition-colors"
+              className="text-hero-text/80 hover:text-hero-text transition-colors flex items-center gap-2"
             >
+              <ShoppingBag className="w-4 h-4" />
               BGL PRO SHOP
             </a>
             <a
@@ -37,7 +38,7 @@ export default function Page() {
               className="text-hero-text/80 hover:text-hero-text transition-colors flex items-center gap-2"
             >
               <User className="w-4 h-4" />
-              CLUBHOUSE
+              BGL CLUBHOUSE
             </a>
           </div>
         </nav>
@@ -48,7 +49,7 @@ export default function Page() {
             A BETTER WAY TO PLAY.
           </h1>
           <p className="text-base md:text-lg text-hero-text-secondary max-w-2xl mb-8 leading-relaxed">
-            Ryder Cup–style team matches on great public courses. A season-long format that rewards competition and
+            The Backyard Golf League features Ryder Cup–style team matches on great public courses. A season-long format that rewards competition and
             camaraderie. Teams of friends or free agents welcome.
           </p>
           <Button
