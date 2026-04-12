@@ -205,7 +205,7 @@ export default function GetClubhousePage() {
       <nav className="flex items-center justify-between p-6 md:p-8 max-w-5xl mx-auto">
         <div className="relative w-[180px] h-[54px] md:w-[240px] md:h-[72px]">
           <Image
-            src="/backyard-golf-logo.png"
+            src="/white_cursive_cropped_transparent.png"
             alt="Backyard Golf"
             fill
             className="object-contain object-left"
