@@ -26,13 +26,15 @@ export default function Page() {
               BGL PRO SHOP
             </a>
             <a
-              href="https://league.backyardgolf.io/"
+              href="https://clubhouse.backyardgolf.io"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-hero-text/80 hover:text-hero-text transition-colors flex items-center gap-2"
+              className="text-hero-text/80 hover:text-hero-text transition-colors"
             >
+              CLUBHOUSE
+            </a>
               <User className="w-4 h-4" />
-              LOG IN
+              CLUBHOUSE
             </a>
           </div>
         </nav>
