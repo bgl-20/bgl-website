@@ -241,7 +241,7 @@ export default function GetClubhousePage() {
               href={CLUBHOUSE_URL}
               className="inline-flex items-center gap-2 bg-[#cc2936] text-white hover:bg-[#cc2936]/90 font-medium rounded-full px-8 py-3.5 text-sm transition-all mb-4"
             >
-              OPEN CLUBHOUSE
+              GO TO THE BGL CLUBHOUSE
               <ArrowRight className="w-4 h-4" />
             </a>
 

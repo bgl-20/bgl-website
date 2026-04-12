@@ -18,8 +18,8 @@ export default function Page() {
         <div className="absolute inset-0 bg-gradient-to-b from-black/20 to-black/40" />
 
         {/* Navigation */}
-        <nav className="absolute top-0 left-0 right-0 flex items-center justify-between p-6 md:p-8 gap-8 z-10">
-          <div className="relative w-[300px] h-[90px]">
+        <nav className="absolute top-0 left-0 right-0 flex items-center justify-between p-4 md:p-8 z-10">
+          <div className="relative w-[180px] h-[54px] md:w-[300px] md:h-[90px]">
             <Image
               src="/backyard-golf-logo.png"
               alt="Backyard Golf"
@@ -28,22 +28,22 @@ export default function Page() {
               priority
             />
           </div>
-          <div className="flex gap-6 md:gap-8 text-sm font-medium">
+          <div className="flex gap-3 md:gap-8 text-sm font-medium">
             <a
               href="https://shop.backyardgolf.io"
               target="_blank"
               rel="noopener noreferrer"
               className="text-hero-text/80 hover:text-hero-text transition-colors flex items-center gap-2"
             >
-              <ShoppingBag className="w-4 h-4" />
-              BGL PRO SHOP
+              <ShoppingBag className="w-5 h-5 md:w-4 md:h-4" />
+              <span className="hidden md:inline">BGL PRO SHOP</span>
             </a>
             <a
               href="/get"
               className="text-hero-text/80 hover:text-hero-text transition-colors flex items-center gap-2"
             >
-              <User className="w-4 h-4" />
-              BGL CLUBHOUSE
+              <User className="w-5 h-5 md:w-4 md:h-4" />
+              <span className="hidden md:inline">BGL CLUBHOUSE</span>
             </a>
           </div>
         </nav>
