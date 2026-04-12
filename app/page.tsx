@@ -22,7 +22,7 @@ export default function Page() {
             />
           </div>
           <div className="flex gap-6 md:gap-8 text-sm font-medium">
-            <a href="https://store.backyardgolf.io" target="_blank" rel="noopener noreferrer" className="text-hero-text/80 hover:text-hero-text transition-colors">
+            <a href="https://shop.backyardgolf.io" target="_blank" rel="noopener noreferrer" className="text-hero-text/80 hover:text-hero-text transition-colors">
               SHOP
             </a>
             <a
@@ -164,7 +164,7 @@ export default function Page() {
           {/* Navigation Links */}
           <div className="flex items-center gap-6">
             <nav className="flex gap-6 text-sm font-medium">
-              <a href="https://store.backyardgolf.io" target="_blank" rel="noopener noreferrer" className="hover:text-dark-section-text transition-colors">
+              <a href="https://shop.backyardgolf.io" target="_blank" rel="noopener noreferrer" className="hover:text-dark-section-text transition-colors">
                 SHOP
               </a>
               <a
