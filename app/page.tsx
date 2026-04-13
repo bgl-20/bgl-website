@@ -57,13 +57,19 @@ export default function Page() {
             The Backyard Golf League features Ryder Cup–style team matches on great public courses. A season-long format that rewards competition and
             camaraderie. Teams of friends or free agents welcome.
           </p>
-          <Button
-            size="lg"
-            className="bg-hero-button-bg text-hero-button-text hover:bg-hero-button-hover font-medium rounded-full px-8 gap-2"
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf7FLTdokdTABESeWEOGw2yARevQTGuDvXKdQzxl6qQC0Bsqw/viewform"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            APPLY TO JOIN
-            <ArrowRight className="w-4 h-4" />
-          </Button>
+            <Button
+              size="lg"
+              className="bg-hero-button-bg text-hero-button-text hover:bg-hero-button-hover font-medium rounded-full px-8 gap-2"
+            >
+              APPLY TO JOIN
+              <ArrowRight className="w-4 h-4" />
+            </Button>
+          </a>
         </div>
       </section>
 
@@ -99,14 +105,20 @@ export default function Page() {
                 Cup–style leagues on top public courses. You get structure, competition, and community. Without the
                 price tag or politics.
               </p>
-              <Button
-                size="lg"
-                variant="outline"
-                className="bg-transparent border-2 border-dark-section-text text-dark-section-text hover:bg-dark-section-text hover:text-primary font-medium rounded-full px-8 gap-2"
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSf7FLTdokdTABESeWEOGw2yARevQTGuDvXKdQzxl6qQC0Bsqw/viewform"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                APPLY TO JOIN
-                <ArrowRight className="w-4 h-4" />
-              </Button>
+                <Button
+                  size="lg"
+                  variant="outline"
+                  className="bg-transparent border-2 border-dark-section-text text-dark-section-text hover:bg-dark-section-text hover:text-primary font-medium rounded-full px-8 gap-2"
+                >
+                  APPLY TO JOIN
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </a>
             </div>
 
             {/* Placeholder for additional content */}
