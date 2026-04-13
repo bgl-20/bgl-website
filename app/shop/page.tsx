@@ -4,10 +4,11 @@ import { ArrowRight, ExternalLink, ShoppingBag, Instagram } from "lucide-react"
 const products = [
   {
     name: "BGL Heavy Hoodie",
-    price: 60,
+    price: 65,
     url: "https://backyardgolf.online/products/backyard-golf-heavy-hoodie",
     description: "Built for cold mornings on the course. Premium heavyweight fleece with BGL branding.",
     badge: "Bestseller",
+    image: "https://backyardgolf.online/cdn/shop/files/45bcc362b6e4812b278e6117d71b6d62.jpg?v=1768335055&width=800",
   },
   {
     name: "Magnetic BGL Towel",
@@ -15,6 +16,7 @@ const products = [
     url: "https://backyardgolf.online/products/magnetic-bgl-towel",
     description: "Magnetic clip keeps your towel where it belongs. Soft, absorbent, and always game-ready.",
     badge: null,
+    image: "https://backyardgolf.online/cdn/shop/files/IMG_0717.heic?v=1752765190&width=800",
   },
   {
     name: "Cotton Candy Polo",
@@ -22,6 +24,7 @@ const products = [
     url: "https://backyardgolf.online/products/bgl-cotton-candy-polo",
     description: "Moisture-wicking performance polo in a colorway that stands out on any fairway.",
     badge: "New",
+    image: "https://backyardgolf.online/cdn/shop/files/IMG_0567.heic?v=1750783167&width=800",
   },
   {
     name: "BGL Marshmallow Hoodie",
@@ -29,6 +32,7 @@ const products = [
     url: "https://backyardgolf.online/products/the-bgl-classic-hoodie",
     description: "The classic BGL hoodie. Soft, structured, and made to wear from tee time to the turn.",
     badge: null,
+    image: "https://backyardgolf.online/cdn/shop/files/E6330163-4F6B-44D0-B067-9D150A10C361.jpg?v=1747675920&width=800",
   },
   {
     name: "Waterproof Golf Pullover",
@@ -36,6 +40,7 @@ const products = [
     url: "https://backyardgolf.online/products/waterproof-golf-pullover",
     description: "Wind and rain resistant shell — because tee times don't cancel for weather.",
     badge: null,
+    image: "https://backyardgolf.online/cdn/shop/files/F0CE743D-66BB-4D4D-B85C-1A3F5D437F0A.jpg?v=1748387019&width=800",
   },
 ]
 
@@ -209,14 +214,11 @@ export default function ShopPage() {
                   background: "linear-gradient(145deg, #edf0f7 0%, #dce2ef 100%)",
                 }}
               >
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div
-                    className="text-6xl font-black opacity-10 tracking-tighter select-none"
-                    style={{ color: "#2c3e6b" }}
-                  >
-                    BGL
-                  </div>
-                </div>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="absolute inset-0 w-full h-full object-cover"
+                />
 
                 {/* View on hover */}
                 <div
