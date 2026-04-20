@@ -54,8 +54,8 @@ export default function Page() {
             A BETTER WAY TO PLAY.
           </h1>
           <p className="text-base md:text-lg text-hero-text-secondary max-w-2xl mb-8 leading-relaxed">
-            The Backyard Golf League features Ryder Cup–style team matches on great public courses. A season-long format that rewards competition and
-            camaraderie. Teams of friends or free agents welcome.
+            The Backyard Golf League is a season-long, Ryder Cup-style team golf league played on top public courses. 
+            Built for competition and camaraderie. Teams of friends or free agents welcome.
           </p>
           <a
             href="https://docs.google.com/forms/d/e/1FAIpQLSf7FLTdokdTABESeWEOGw2yARevQTGuDvXKdQzxl6qQC0Bsqw/viewform"
@@ -66,7 +66,7 @@ export default function Page() {
               size="lg"
               className="bg-hero-button-bg text-hero-button-text hover:bg-hero-button-hover font-medium rounded-full px-8 gap-2"
             >
-              APPLY TO JOIN
+              JOIN THE BACKYARD GOLF LEAGUE
               <ArrowRight className="w-4 h-4" />
             </Button>
           </a>
